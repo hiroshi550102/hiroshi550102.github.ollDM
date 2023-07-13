@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.l-header {
+  display: none;
+  /* activeclassがついた場合 */
+}
+.l-header__logo {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+.l-header__logo a {
+  display: block;
+}
+.l-header__logo a img {
+  display: block;
+}
+.l-header .hamburger {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  z-index: 20;
+  display: none;
+}
+.l-header .hamburger span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  z-index: 10;
+}
+.l-header .hamburger span:nth-of-type(1) {
+  top: 9px;
+}
+.l-header .hamburger span:nth-of-type(2) {
+  top: 20px;
+}
+.l-header .hamburger span:nth-of-type(3) {
+  top: 31px;
+}
+.l-header .hambugger.active {
+  display: block;
+}
+.l-header #nav {
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 10;
+  transition: 0.6s;
+  transform: translateY(-100%);
+}
+.l-header #nav .l-header__menu {
+  padding: 80px 0 30px 0;
+  background-color: #fff;
+  width: 100%;
+}
+.l-header #nav .l-header__menu li {
+  padding: 10px 0;
+}
+.l-header #nav .l-header__menu li a {
+  display: block;
+}
+.l-header #nav.active {
+  transform: translateY(0%);
+}
+.l-header .hamburger.active span:nth-child(1) {
+  top: 21px;
+  left: 6px;
+  transform: rotate(-45deg);
+}
+.l-header .hamburger.active span:nth-child(2) {
+  transform: rotateX(90deg);
+}
+.l-header .hamburger.active span:nth-child(3) {
+  top: 21px;
+  left: 6px;
+  transform: rotate(45deg);
+}
+/*# sourceMappingURL=_header.css.map */

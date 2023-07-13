@@ -1,0 +1,98 @@
+.site-title {
+  margin: 100px 0;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 48px;
+  }
+}
+
+#information {
+  margin-bottom: 140px;
+}
+@media (max-width: 768px) {
+  #information {
+    margin-bottom: 80px;
+  }
+}
+#information .product {
+  margin-bottom: 140px;
+}
+#information .product__data--en {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+#information .product__place {
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+#style {
+  margin-bottom: 480px;
+}
+#style .product__list li {
+  margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  #style .product__list li {
+    margin-bottom: 30px;
+  }
+}
+#style .product__list li img {
+  width: 48%;
+}
+@media (max-width: 768px) {
+  #style .product__list li img {
+    width: 100%;
+  }
+}
+#style .product__list li:nth-child(odd) {
+  text-align: left;
+}
+#style .product__list li:nth-child(even) {
+  text-align: right;
+}
+
+#access {
+  color: #fff;
+  margin-bottom: 480px;
+}
+@media (max-width: 768px) {
+  #access {
+    margin-bottom: 280px;
+  }
+}
+#access .product__place {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+#access .product__address {
+  margin-bottom: 20px;
+}
+#access .product__contact {
+  margin-bottom: 30px;
+}
+
+#contact {
+  margin-bottom: 200px;
+}
+
+.bg {
+  background: url(https://code-step.com/demo/html/gallery/img/bg.jpg) center center repeat !important;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  display: none;
+}
+/*# sourceMappingURL=_section.css.map */

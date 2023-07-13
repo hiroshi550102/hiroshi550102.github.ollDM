@@ -1,0 +1,79 @@
+.c-primary-btn {
+  padding: 15px 82px;
+  border: 1px solid #000;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.c-primary-googlebtn {
+  padding: 15px 82px;
+  border: 1px solid #fff;
+  transition: 0.3s;
+  display: inline-block;
+  color: #fff;
+}
+
+.cantact-btn {
+  display: block;
+  width: 400px;
+  margin: 0 auto 20px;
+  padding: 30px 0;
+  transition: 0.3s;
+  border: 1px solid #000;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .cantact-btn {
+    width: 100%;
+  }
+}
+
+.cantact-btn:hover {
+  opacity: 0.3;
+  background-color: #000;
+  color: #fff;
+}
+
+.cantact-btn:hover::before {
+  transform: translateX(10px);
+  z-index: 10;
+}
+
+.cantact-btn:hover::after {
+  transform: translateX(10px) rotate(25deg);
+}
+
+.cantact-btn::before {
+  content: "";
+  position: absolute;
+  top: 48px;
+  right: -40px;
+  width: 120px;
+  height: 1px;
+  background-color: #000;
+  transition: 0.3s;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .cantact-btn::before {
+    display: none;
+  }
+}
+
+.cantact-btn::after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  right: -40px;
+  width: 5%;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(25deg);
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .cantact-btn::after {
+    display: none;
+  }
+}
+/*# sourceMappingURL=_btn.css.map */

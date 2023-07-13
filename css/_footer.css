@@ -1,0 +1,35 @@
+#footer {
+  padding: 80px 30px;
+  font-size: 12px;
+  border-top: 1px solid #000;
+}
+@media (max-width: 768px) {
+  #footer {
+    padding: 60px 30px;
+  }
+}
+#footer p {
+  line-height: 1.6;
+}
+
+.l-footer__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.l-footer__sns {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.l-footer__sns li {
+  margin-right: 15px;
+}
+.l-footer__copyright {
+  display: flex;
+  align-items: center;
+}
+.l-footer__copyright li:last-child {
+  margin-left: 30px;
+}
+/*# sourceMappingURL=_footer.css.map */
