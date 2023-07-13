@@ -1,0 +1,13 @@
+.mainVisual {
+	display: flex;
+	justify-content: center;
+	overflow: hidden; 
+	width: 100%;
+	height: 100vh;
+	img {
+		width: calc(100% / 3);
+		height: 100vh;
+		object-fit: cover; 
+		flex-shrink: 0;
+	}
+}

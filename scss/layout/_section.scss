@@ -1,0 +1,107 @@
+@use "../foundation/mixin" as foumix;
+
+.site-title {
+	margin: 100px 0;
+	text-align: center;
+	font-size: 100px;  
+	font-weight: 300;
+	letter-spacing: 0.03em;
+	line-height: 1.5;
+	@include foumix.tab {
+    font-size: 48px; 
+	}
+}
+
+#information { 
+  margin-bottom: 140px;
+	@include foumix.tab {
+		margin-bottom: 80px; 
+	}
+	.product{
+		margin-bottom: 140px;
+		&__data--en {
+			display: block;
+			font-size: 1.5em;
+			margin-bottom: 10px; 
+	
+		}
+		&__place {
+			margin: 20px 0;
+			font-weight: 300; 
+			font-size: 30px;  
+		}
+	} 
+}
+
+#style {
+	margin-bottom: 480px; 
+	.product {
+		&__list {  
+	   li {
+				margin-bottom: 60px;
+				@include foumix.tab {
+					margin-bottom: 30px; 
+				} 
+				img {
+					width: 48%;
+					@include foumix.tab {
+						width: 100%;  
+					}  
+				}
+		 }
+		 li:nth-child(odd) {   
+			text-align: left;  
+		 }
+		 li:nth-child(even) {  
+			text-align: right;    
+		 }
+	
+		}
+	}
+}
+
+#access {
+	color: #fff; 
+	margin-bottom: 480px; 
+	@include foumix.tab {
+		margin-bottom: 280px;  
+
+	} 
+  .product{
+		&__place {
+			margin-bottom: 20px;
+			font-weight: 400;
+			font-size: 1.75rem; 
+		}
+		&__address {
+			margin-bottom: 20px;  
+		}
+		&__contact {
+			margin-bottom: 30px; 
+		}
+	}
+}
+
+#contact {
+	margin-bottom: 200px;
+}
+
+.bg {
+	background: url(https://code-step.com/demo/html/gallery/img/bg.jpg) center center repeat !important;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	display: none; 
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+$pc: 1080px; // PC
+$tab: 768px; // タブレット
+$sp: 374px;  // スマホ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin c-title {
+	margin-bottom: 45px; 
+	font-size: 3.75rem;
+	display: inline-block;
+	border-bottom: 1px solid #000;
+	letter-spacing: 0.03em;
+	text-align: center;  
+}
+

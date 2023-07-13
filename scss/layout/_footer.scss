@@ -1,0 +1,40 @@
+@use "../foundation/mixin" as formix;
+
+#footer {
+	padding: 80px 30px; 
+  font-size: 12px;
+	border-top: 1px solid #000;
+	@include  formix.tab {
+		padding: 60px 30px; 
+	}
+	p {
+		line-height: 1.6; 
+	}
+
+}
+
+.l-footer {
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	&__sns {
+		margin-top: 30px;
+		display: flex; 
+		align-items: center;
+		li {
+			margin-right: 15px; 
+		}
+	}
+
+	&__copyright {
+		display: flex; 
+		align-items: center;
+		li:last-child {
+			margin-left: 30px; 
+		} 
+
+	}
+
+} 

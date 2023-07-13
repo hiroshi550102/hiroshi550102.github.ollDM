@@ -1,0 +1,14 @@
+@use "../../foundation/mixin" as fomix;
+
+.c-sectionTitle {
+  @include fomix.c-title;
+  @include fomix.tab {
+    font-size: 32px; 
+  }
+
+}
+
+.c-sectionTitle--a {
+  border-bottom: 1px solid #fff; 
+
+}
